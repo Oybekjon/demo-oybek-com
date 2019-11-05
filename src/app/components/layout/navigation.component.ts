@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 export class NavigationComponent {
     private loggedIn: boolean = false;
     constructor(
-        private storage: Storage,
+        
         private router: Router
     ) { }
     ngOnInit() {

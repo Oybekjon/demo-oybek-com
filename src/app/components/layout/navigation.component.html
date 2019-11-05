@@ -1,0 +1,32 @@
+<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <div class="container">
+        <a href="/" class="navbar-brand">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">Some text</a>
+                </li>
+                <!-- <li class="nav-item" *ngIf="!loggedIn">
+            <a routerLink="/login" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item" *ngIf="!loggedIn">
+            <a routerLink="/register" class="nav-link">Register</a>
+          </li>
+          <li class="nav-item" *ngIf="loggedIn">
+            <a routerLink="/my" class="nav-link">List</a>
+          </li>
+          <li class="nav-item" *ngIf="loggedIn">
+            <a routerLink="/my/list" class="nav-link">Connected services</a>
+          </li>
+        -->
+                <li class="nav-item" *ngIf="loggedIn">
+                    <a (click)="logout()" href="javascript:;" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

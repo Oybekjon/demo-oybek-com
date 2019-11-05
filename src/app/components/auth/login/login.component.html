@@ -1,0 +1,35 @@
+<div class="container margin-top-100">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="bs-component">
+                <form>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div class="form-group" *ngIf="!isLoading">
+                            <label for="email">Email</label>
+                            <input name="email" class="form-control" type="email" [(ngModel)]="email" />
+                        </div>
+                        <div class="form-group" *ngIf="!isLoading">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input name="password" class="form-control" type="password" [(ngModel)]="password" />
+                        </div>
+                        <a href="javascript:;" *ngIf="!isLoading" class="btn btn-primary"
+                            (click)="login($event)">Login</a>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" *ngIf="message">
+        <div class="col-lg-6">
+            <div class="bs-component">
+                <div class="alert alert-dismissible alert-danger">
+                    {{message}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
