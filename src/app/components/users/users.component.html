@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <h1>You are seeing user list</h1>
+        <div class="row">
+            <div class="col-lg-12" *ngFor="let user of users">
+                {{user.FirstName}}
+                {{user.LastName}}
+                <b>{{user.Email}}</b>
+                {{user.Role}}
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <a routerLink="create">Create</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <h1>Create new user</h1>
+        <div class="col-lg-6">
+            <div class="bs-component">
+                <form>
+                    <fieldset>
+                        <legend>Details</legend>
+                        <div class="form-group">
+                            <label for="firstName">First name</label>
+                            <input name="firstName" class="form-control" type="text" [(ngModel)]="FirstName" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last name</label>
+                            <input name="lastName" class="form-control" type="text" [(ngModel)]="LastName" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" class="form-control" type="text" [(ngModel)]="Email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input name="password" class="form-control" type="password" [(ngModel)]="Password" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="isAdmin">Is admin</label>
+                            <input name="isAdmin" type="checkbox" [(ngModel)]="IsAdmin" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <a class="btn btn-success" (click)="create($event)">Create</a>
+</div>
